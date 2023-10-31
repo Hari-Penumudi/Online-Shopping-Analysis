@@ -94,6 +94,9 @@ from `TARGET.Customers`
 group by customer_state
 order by No_of_customers desc;
 ```
+![No_of_customers by customer_state](https://github.com/Hari-Penumudi/Online-Shopping-Analysis/assets/145786144/900756a6-699b-4863-9dfe-acc3b2e04990)
+
+
 ### Stage-3:Impact on Economy: Analyze the money movement by e-commerce by looking at order prices, freight and others.
 
 1.Get the % increase in the cost of orders from year 2017 to 2018 (include months between Jan to Aug only).
@@ -126,6 +129,8 @@ WHERE
 GROUP BY month
 ORDER BY month;
 ```
+![image](https://github.com/Hari-Penumudi/Online-Shopping-Analysis/assets/145786144/53a07f7e-96c4-4e2f-969c-aed44a1df697)
+
 
 2. Calculate the Total & Average value of order price for each state.
 ```sql
@@ -164,6 +169,9 @@ JOIN `TARGET.Customers` c ON o.customer_id = c.customer_id
 GROUP BY c.customer_state
 ORDER BY mean_freight_value;
 ```
+
+![image](https://github.com/Hari-Penumudi/Online-Shopping-Analysis/assets/145786144/bdd79fe3-716f-424c-b862-c92532eb715f)
+
 ### Stage-5: Analysis based on the payments
 
 1. Find the month on month no.of orders placed using different payment types.
